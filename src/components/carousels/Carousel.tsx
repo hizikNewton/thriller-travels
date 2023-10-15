@@ -1,47 +1,61 @@
-/* import { useState } from "react";
-import "./Carousel.css";
+import { Children, cloneElement, useEffect, useRef, useState } from "react";
 
-export const Carousel = ({ data,nextHandler,prevHandler }) => {
-  const [slide, setSlide] = useState(0);
-    
-  const nextSlide = () => {
-    setSlide(slide === data.length - 1 ? 0 : slide + 1);
-  };
+const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const delay = 2500;
 
-  const prevSlide = () => {
-    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+const Carousel = ({ children }) => {
+  const [index, setIndex] = useState(0);
+  const timeoutRef = useRef<any>(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+  const ref = useRef<any>(null);
+
+  const scroll = (scrollOffset) => {
+    console.log("i just no wan work", ref, scrollOffset)
+    ref.current.scrollX = 30;
   };
+  /*  useEffect(() => {
+     resetTimeout();
+     timeoutRef.current = setTimeout(
+       () =>
+         setIndex((prevIndex) =>
+           prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+         ),
+       delay
+     );
+ 
+     return () => {
+       resetTimeout();
+     };
+   }, [index]);
+  */
+
+
 
   return (
-    <div className="carousel">
-      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
-      {data.map((item, idx) => {
-        return (
-          <img
-            src={item.src}
-            alt={item.alt}
+    <>
+      <div className="slideshowSlider" ref={ref}
+      >
+        {children}
+
+      </div>
+
+      <div className="slideshowDots">
+        {colors.map((_, idx) => (
+          <div
             key={idx}
-            className={slide === idx ? "slide" : "slide slide-hidden"}
-          />
-        );
-      })}
-      <BsArrowRightCircleFill
-        onClick={nextSlide}
-        className="arrow arrow-right"
-      />
-      <span className="indicators">
-        {data.map((_, idx) => {
-          return (
-            <button
-              key={idx}
-              className={
-                slide === idx ? "indicator" : "indicator indicator-inactive"
-              }
-              onClick={() => setSlide(idx)}
-            ></button>
-          );
-        })}
-      </span>
-    </div>
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => scroll(-20)}
+          ></div>
+        ))}
+      </div>
+    </>
   );
-}; */
+}
+
+export default Carousel
+

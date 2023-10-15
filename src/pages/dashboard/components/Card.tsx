@@ -1,13 +1,15 @@
 import Icon from "@components/icons"
-type Props = {}
+import { FC } from "react"
+interface Props {
+}
 
-const Card = (props: Props) => {
+const Card: FC<Props> = () => {
     return (
-        <div className="card-container flex gap-x-4 max-w-[403px] p-3 bg-white">
+        <div className="card-container flex flex-shrink-0 gap-x-4 max-w-[403px] p-3 bg-white slide">
             <div className="backgroundImage w-24 h-24 flex-shrink-0" style={{ backgroundImage: `url(${"src/assets/london.jpg"})` }}>
                 {/* <img src={'src/assets/london.jpg'} alt="" /> */}
             </div>
-            <div>
+            <div >
                 <h3>Montmartre, France</h3>
                 <p className="mt-2 mb-3">visiting the best tourist areas chosen by the audience</p>
                 <p>$450,000,000</p>

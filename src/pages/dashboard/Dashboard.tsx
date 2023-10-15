@@ -1,8 +1,10 @@
 
+import Carousel from "@components/carousels"
 import card from "./components/Card"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Section from "./components/Section"
+import Caro from "@components/carousels/Caro"
 
 
 type Props = {}
@@ -14,11 +16,16 @@ const Dashboard = (props: Props) => {
         <>
             <Header />
             <Hero />
-            <Section headerText="Trending Destination">
-                {/*  <button onClick={handleClick}>next</button>
-                <button>prev</button>
-                <Carousel data={slides} /> */}
-                <Card />
+            <Section headerText="Trending Destination" carousel>
+                <Caro>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </Caro>
             </Section>
             <Section headerText="Best Offer" HeaderAction={"View All"}>
                 {Array(18).fill(0).map(i => <Card2 />)}
