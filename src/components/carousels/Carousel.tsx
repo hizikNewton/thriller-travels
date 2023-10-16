@@ -8,7 +8,7 @@ const Carousel = ({ children }) => {
     const elementRef = useRef(null);
     const [arrowDisable, setArrowDisable] = useState(true);
 
-    const [index, setIndex] = useState(0);
+    const [index, _] = useState(0);
     const timeoutRef = useRef<any>(null);
 
 

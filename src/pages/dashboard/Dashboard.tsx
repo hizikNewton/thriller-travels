@@ -14,15 +14,15 @@ const Dashboard = () => {
             <Hero />
             <Section headerText="Trending Destination" carousel>
                 <Carousel>
-                    {Array(5).fill(0).map(_ => <Card />)}
+                    {Array(5).fill(0).map((_, idx) => <Card key={idx} />)}
                 </Carousel>
             </Section>
             <Section headerText="Best Offer" HeaderAction={"View All"}>
-                {Array(18).fill(0).map(_ => <Card2 />)}
+                {Array(18).fill(0).map((_, idx) => <Card2 key={idx} />)}
             </Section>
-            {/* <Section headerText="Explore France">
+            <Section headerText="Explore France">
                 <Card />
-            </Section> */}
+            </Section>
         </>
     )
 }

@@ -1,9 +1,8 @@
 import Button from "@components/button"
 import Icon from "@components/icons"
 
-type Props = {}
 
-const Hero = (props: Props) => {
+const Hero = () => {
     return (
         <div className="heroContainer">
             <div className="backgroundImage h-44  w-full rounded-2xl" style={{ backgroundImage: `url(${"src/assets/london.jpg"})` }} />

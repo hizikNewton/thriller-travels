@@ -12,7 +12,7 @@ function App() {
       <Route path="" element={<Layout />}>
         <Route path={"/dashboard"} element={<Dashboard />} />
         {routes.map(({ name, path }) => (
-          <Route path={path} element={<Others name={name} />} />
+          <Route key={path} path={path} element={<Others name={name} />} />
         ))}
         <Route path={""} element={<Navigate to="dashboard" replace />} />
       </Route>

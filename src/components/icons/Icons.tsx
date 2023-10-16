@@ -1,4 +1,4 @@
-import { Chevright, Dashboard, Favorite, Home, Mail, Settings, Location, ArrowDown, Calendar, User, Search, Notif, Star, Edit, Explore } from "@assets/icons";
+import { Chevright, Dashboard, Favorite, Home, Mail, Settings, Location, ArrowDown, Calendar, User, Search, Notif, Star, Edit } from "@assets/icons";
 import React, { FC } from "react";
 
 interface IconProps extends React.HTMLAttributes<HTMLElement> {
