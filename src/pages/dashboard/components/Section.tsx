@@ -12,7 +12,7 @@ const Section: FC<PropsWithChildren<Props>> = ({ carousel, headerText, HeaderAct
             <h3 className=" text-xl">{headerText}</h3>
             <span className=" text-sm">{HeaderAction && (typeof HeaderAction === "string" ? HeaderAction : HeaderAction())}</span>
         </div>
-        <div className={`${carousel ? "" : "flex space-x-6 overflow-x-scroll"}`}>
+        <div className={` no-scrollbar ${carousel ? "" : "flex space-x-6 overflow-x-scroll"}`}>
             {children}
         </div>
     </section>

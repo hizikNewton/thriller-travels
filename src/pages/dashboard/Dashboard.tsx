@@ -1,10 +1,9 @@
 
 import Carousel from "@components/carousels"
 import card from "./components/Card"
-import Header from "./components/Header"
+import Header from "../../layouts/components/Header"
 import Hero from "./components/Hero"
 import Section from "./components/Section"
-import Caro from "@components/carousels/Caro"
 
 
 type Props = {}
@@ -14,21 +13,14 @@ const Dashboard = (props: Props) => {
 
     return (
         <>
-            <Header />
             <Hero />
             <Section headerText="Trending Destination" carousel>
-                <Caro>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                </Caro>
+                <Carousel>
+                    {Array(5).fill(0).map(_ => <Card />)}
+                </Carousel>
             </Section>
             <Section headerText="Best Offer" HeaderAction={"View All"}>
-                {Array(18).fill(0).map(i => <Card2 />)}
+                {Array(18).fill(0).map(_ => <Card2 />)}
             </Section>
             {/* <Section headerText="Explore France">
                 <Card />

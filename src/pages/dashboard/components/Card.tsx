@@ -10,14 +10,14 @@ const Card: FC<Props> = () => {
 
             </div>
             <div >
-                <h3>Montmartre, France</h3>
-                <p className="mt-2 mb-3">visiting the best tourist areas chosen by the audience</p>
-                <p>$450,000,000</p>
+                <h3 className="text-lg font-bold">Montmartre, France</h3>
+                <p className="mt-2 mb-3 text-gray-300 text-xs font-normal leading-[21px]">visiting the best tourist areas chosen by the audience</p>
+                <p text-slate-700 text-base font-normal >$450,000,000</p>
             </div>
             <div>
-                <span className="flex">
+                <span className="flex items-center gap-1">
                     <Icon name="star" />
-                    <span>4/5</span>
+                    <span className="text-sm">4/5</span>
                 </span>
             </div>
         </div>

@@ -30,8 +30,8 @@
 
   .slideshowDot {
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
 
     cursor: pointer;
@@ -41,7 +41,7 @@
   }
 
   .slideshowDot.active {
-    background-color: #6a0dad;
+    background-color: #2d3253;
   }
 
   .img-container {
@@ -55,6 +55,21 @@
     group-active {
       font-weight: 500;
       color: 'yellow';
+    }
+  }
+
+  @layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
     }
   }
 }

@@ -13,7 +13,7 @@ const Hero = (props: Props) => {
                         <div className="flex w-full ">
                             <div className="search h-[60px] flex-1 items-center ml-12">
                                 <label className="relative ">
-                                    <Icon name="location" className="absolute -top-[3px] left-2 " />
+                                    <Icon name="location" className=" absolute -top-[3px] left-2 " />
                                     <input
                                         className="rounded !outline-none  w-full h-full pr-3.5 pl-8 py-2.5"
                                         placeholder="Where are you going?"
@@ -42,7 +42,7 @@ const Hero = (props: Props) => {
                                 </label>
                             </div>
                         </div>
-                        <Button className={"mr-5 rounded-[20px] text-white "} />
+                        <Button className={"mr-5 rounded-[20px] text-white bg-slate-700"} />
 
                     </div>
                 </div>

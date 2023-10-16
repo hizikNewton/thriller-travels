@@ -1,5 +1,4 @@
-import { useContext } from "react"
-import { MobileNavContext } from "../Layout"
+
 import Logo from "@assets/logo.svg";
 import Icon from "@components/icons/Icons";
 import routes from '../../routes';
@@ -10,10 +9,9 @@ type Props = {}
 
 const Sidebar = (props: Props) => {
 
-    const { open } = useContext(MobileNavContext)
     return (
-        <div className={`sidebar flex flex-col justify-between text-center flex-shrink-0 h-screen  w-60 
-        p-9 pb-0 gap-y-6 overflow-hidden  md:fixed ${open ? "open" : ""}`} >
+        <div className="sidebar flex flex-col justify-between text-center flex-shrink-0 h-screen bg-white w-60 
+        p-9 pb-0 gap-y-6 overflow-hidden  md:fixed" >
             <div className="sidebar-logo ">
                 <img src={Logo} />
                 <div className="flex flex-col items-center mt-6">
