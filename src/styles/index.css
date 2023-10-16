@@ -52,10 +52,6 @@
 
   .active {
     fill: #343a5a;
-    group-active {
-      font-weight: 500;
-      color: 'yellow';
-    }
   }
 
   @layer utilities {

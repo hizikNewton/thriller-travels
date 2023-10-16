@@ -1,15 +1,13 @@
 
 import Carousel from "@components/carousels"
 import card from "./components/Card"
-import Header from "../../layouts/components/Header"
 import Hero from "./components/Hero"
 import Section from "./components/Section"
 
 
-type Props = {}
 
 const { Card, Card2 } = card
-const Dashboard = (props: Props) => {
+const Dashboard = () => {
 
     return (
         <>

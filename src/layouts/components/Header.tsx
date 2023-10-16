@@ -1,8 +1,7 @@
 import Icon from '@components/icons'
 
-type Props = {}
 
-const Header = (props: Props) => {
+const Header = () => {
     return (
         <div className="col-start-2 col-end-3 flex justify-between h-[89px] w-full  bg-white content-center items-center px-9 rounded-2xl">
             <div className="search">

@@ -4,10 +4,9 @@ import Icon from "@components/icons/Icons";
 import routes from '../../routes';
 import { NavLink } from "react-router-dom";
 
-type Props = {}
 
 
-const Sidebar = (props: Props) => {
+const Sidebar = () => {
 
     return (
         <div className="sidebar flex flex-col justify-between text-center flex-shrink-0 h-screen bg-white w-60 
