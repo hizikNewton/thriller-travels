@@ -1,10 +1,13 @@
+import { FC } from "react"
 
-type Props = {}
+interface Props {
+    className: string
+}
 
-const Button = (props: Props) => {
+const Button: FC<Props> = ({ className }) => {
     return (
         <div>
-            <button className=' bg-slate-900 h-14 px-9 text-cyan-200'>Search</button>
+            <button className={`${className} bg-slate-900 h-14 px-9 text-cyan-200`}>Search</button>
         </div>
     )
 }

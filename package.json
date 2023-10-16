@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "icons:create": "npx @svgr/cli --typescript -d ./src/assets/icons ./src/assets/icons",
+    "icons:create": "npx @svgr/cli --typescript  --out-dir ./src/assets ./src/assets/home.svg",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -1,6 +1,15 @@
+export { default as ArrowDown } from "./ArrowDown";
+export { default as Calendar } from "./Calendar";
 export { default as Chevright } from "./Chevright";
 export { default as Dashboard } from "./Dashboard";
+export { default as Edit } from "./Edit";
+export { default as Explore } from "./Explore";
 export { default as Favorite } from "./Favorite";
 export { default as Home } from "./Home";
+export { default as Location } from "./Location";
 export { default as Mail } from "./Mail";
+export { default as Notif } from "./Notif";
+export { default as Search } from "./Search";
 export { default as Settings } from "./Settings";
+export { default as Star } from "./Star";
+export { default as User } from "./User";

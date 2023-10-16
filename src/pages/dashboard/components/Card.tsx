@@ -5,9 +5,9 @@ interface Props {
 
 const Card: FC<Props> = () => {
     return (
-        <div className="card-container flex flex-shrink-0 gap-x-4 max-w-[403px] p-3 bg-white slide">
-            <div className="backgroundImage w-24 h-24 flex-shrink-0" style={{ backgroundImage: `url(${"src/assets/london.jpg"})` }}>
-                {/* <img src={'src/assets/london.jpg'} alt="" /> */}
+        <div className="card-container flex flex-shrink-0 gap-x-4 max-w-[403px] p-3 bg-white slide rounded-2xl">
+            <div className="backgroundImage w-24 h-24 flex-shrink-0 rounded-2xl" style={{ backgroundImage: `url(${"src/assets/london.jpg"})` }}>
+
             </div>
             <div >
                 <h3>Montmartre, France</h3>
@@ -16,7 +16,7 @@ const Card: FC<Props> = () => {
             </div>
             <div>
                 <span className="flex">
-                    <Icon name="chevRight" />
+                    <Icon name="star" />
                     <span>4/5</span>
                 </span>
             </div>
@@ -32,7 +32,7 @@ const Card2 = () => {
                 <p>7 Season Apartment</p>
                 <div className=" my-2">
                     <span className="flex">
-                        <Icon name="chevRight" />
+                        <Icon name="location" />
                         <span>Hungary Budapest</span>
                     </span>
                 </div>
