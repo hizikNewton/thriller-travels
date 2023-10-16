@@ -12,7 +12,7 @@ const Card: FC<Props> = () => {
             <div >
                 <h3 className="text-lg font-bold">Montmartre, France</h3>
                 <p className="mt-2 mb-3 text-gray-300 text-xs font-normal leading-[21px]">visiting the best tourist areas chosen by the audience</p>
-                <p text-slate-700 text-base font-normal >$450,000,000</p>
+                <p className="text-slate-700 text-base font-normal" >$450,000,000</p>
             </div>
             <div>
                 <span className="flex items-center gap-1">
